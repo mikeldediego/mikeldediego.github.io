@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mikel de Diego García - Salesforce Solutions Architect</title>
+  <meta name="description" content="Salesforce Solutions Architect with 10+ years of experience designing scalable architectures for Education and Nonprofit sectors.">
+  <link rel="canonical" href="https://mikeldediego.github.io/about/">
+  <meta property="og:type" content="profile">
+  <meta property="og:title" content="Mikel de Diego García - Salesforce Solutions Architect">
+  <meta property="og:description" content="Salesforce Solutions Architect with 10+ years of experience designing scalable architectures for Education and Nonprofit sectors.">
+  <meta property="og:url" content="https://mikeldediego.github.io/about/">
+  <meta property="og:image" content="https://mikeldediego.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="stylesheet" href="/assets/styles.css">
+  <script>
+    /* set theme before first paint to avoid a flash */
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem("theme"); } catch (e) {}
+      if (!t) {
+        var p = new URLSearchParams(location.search).get("theme");
+        t = p || (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      }
+      document.documentElement.setAttribute("data-theme", t === "dark" ? "dark" : "light");
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top">Mikel de Diego</a>
+      <nav class="main-nav" id="nav" aria-label="Sections"></nav>
+      <div class="controls">
+        <button id="expand-all" type="button">Expand all</button>
+        <button id="lang-toggle" type="button">ES</button>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark/light theme">☾</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <h1 id="hero-name"></h1>
+      <p class="headline" id="hero-headline"></p>
+      <p class="contact">
+        <a id="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg>
+          <span id="linkedin-text">LinkedIn</span>
+        </a>
+      </p>
+    </div>
+    <div id="sections"></div>
+    <footer>© <span id="foot-year"></span> <span id="foot-name"></span></footer>
+  </main>
+
+  <script src="/content.js"></script>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
